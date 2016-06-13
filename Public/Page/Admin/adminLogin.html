@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="Public/Bootstrap/Costom/daftar.css" media="screen" title="no title" charset="utf-8">
+
+<form name="loginFrm" class="form-signin" ng-controller="loginController">
+    <h2 class="form-signin-heading">VBI Member Login</h2>
+    <label for="inputEmail" class="sr-only">VBI Email</label>
+    <input ng-model="email" type="email" id="inputEmail" class="form-control" placeholder="VBI Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input ng-model="pass" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <i style="color:red"> {{ pesan }}</i>
+    <br>
+    <button ng-disabled="loginFrm.$invalid" ng-click="masukAdmin()" class="btn btn-lg btn-primary btn-block" type="submit">Masuk Admin</button>
+</form>
