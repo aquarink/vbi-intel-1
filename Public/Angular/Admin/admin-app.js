@@ -8,18 +8,17 @@ admins.config(['$routeProvider',
         when('/admin', {
             resolve: {
                 "check": function ($location) {
-                    var authSession = JSON.parse(sessionStorage.getItem('sesi'));
 
-                    if (!authSession) {
-                        console.log('Session Empty');
-                    } else {
-                        var sessions = authSession.session;
-                        if (sessions == 'true') {
-                            $location.path('/adminhome');
-                        } else {
-                            $location.path('/admin')
-                        }
+                    var kue = document.cookie;
+                    var kueIndex = kue.split(';')[0];
+                    var kueExplode = kueIndex.split('=');
+                    var kueFinal = [{"session": kueExplode[0], "status": kueExplode[1], "token": kueExplode[2]}];
+                    var kueStatus = kueFinal[0]['status'];
+
+                    if(kueStatus == 'true') {
+                        $location.path('/adminhome');
                     }
+
                 }
             },
             templateUrl: 'Public/Page/Admin/adminLogin.html',
@@ -30,17 +29,22 @@ admins.config(['$routeProvider',
         when('/adminkeluar', {
             resolve: {
                 "check": function ($location) {
-                    var authSession = JSON.parse(sessionStorage.getItem('sesi'));
 
-                    if (!authSession) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(1*1000));
+                    var expires = "expires="+date.toGMTString();
+
+                    document.cookie = 'token=false=null;'+expires;
+                    var kue = document.cookie;
+                    var kueIndex = kue.split(';')[0];
+                    var kueExplode = kueIndex.split('=');
+                    var kueFinal = [{"session": kueExplode[0], "status": kueExplode[1], "token": kueExplode[2]}];
+                    var kueStatus = kueFinal[0]['status'];
+
+                    if(kueStatus == 'false') {
                         $location.path('/admin');
-                    } else {
-                        var sessions = authSession.session;
-                        if (sessions == 'true') {
-                            sessionStorage.clear();
-                            $location.path('/admin');
-                        }
                     }
+
                 }
             }
         }).
@@ -48,17 +52,15 @@ admins.config(['$routeProvider',
         when('/adminhome', {
             resolve: {
                 "check": function ($location) {
-                    var authSession = JSON.parse(sessionStorage.getItem('sesi'));
 
-                    if (!authSession) {
+                    var kue = document.cookie;
+                    var kueIndex = kue.split(';')[0];
+                    var kueExplode = kueIndex.split('=');
+                    var kueFinal = [{"session": kueExplode[0], "status": kueExplode[1], "token": kueExplode[2]}];
+                    var kueStatus = kueFinal[0]['status'];
+
+                    if(kueStatus == 'false') {
                         $location.path('/admin');
-                    } else {
-                        var sessions = authSession.session;
-                        if (sessions == 'true') {
-
-                        } else {
-                            $location.path('/admin');
-                        }
                     }
                 }
             },
@@ -80,7 +82,7 @@ admins.config(['$routeProvider',
 
 admins.run(['$location', '$rootScope',
     function ($location, $rootScope) {
-        $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        $rootScope.$on('$routeChangeSuccess', function (event, current) {
             if (current.hasOwnProperty('$$route')) {
                 $rootScope.title = current.$$route.title;
                 $rootScope.urls = $location.path();

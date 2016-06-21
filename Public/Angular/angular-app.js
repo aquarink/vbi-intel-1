@@ -14,9 +14,24 @@ pebs.config(['$routeProvider',
             title: 'Selamat 404'
         }).
 
+        when('/berita', {
+            templateUrl: 'Public/Page/berita.html',
+            title: 'Judul Berita'
+        }).
+
+        when('/chat', {
+            templateUrl: 'Public/Page/chat.html',
+            title: 'Nama Room Chat Room'
+        }).
+
         when('/race', {
             templateUrl: 'Public/Page/race.html',
             title: 'Racing Event'
+        }).
+
+        when('/galeri', {
+            templateUrl: 'Public/Page/galeri.html',
+            title: 'Photo dan Video'
         }).
 
         when('/region', {
@@ -24,9 +39,9 @@ pebs.config(['$routeProvider',
             title: 'Daftar Region Cabang'
         }).
 
-        when('/chat', {
-            templateUrl: 'Public/Page/chat.html',
-            title: 'Nama Room Chat Room'
+        when('/teamrider', {
+            templateUrl: 'Public/Page/teamrider.html',
+            title: 'Team & Rider'
         }).
 
         // Akun
@@ -55,19 +70,6 @@ pebs.run(['$location', '$rootScope',
         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
             if (current.hasOwnProperty('$$route')) {
                 $rootScope.title = current.$$route.title;
-
-                var authSession = JSON.parse(sessionStorage.getItem('sesi'));
-
-                if (!authSession) {
-                    $rootScope.akun = '1';
-                } else {
-                    var sessions = authSession.session;
-                    if (sessions == 'true') {
-                        $rootScope.akun = '2';
-                    } else {
-                        $rootScope.akun = false;
-                    }
-                }
             }
         });
     }]);

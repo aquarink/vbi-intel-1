@@ -10,10 +10,9 @@
     <link type="text/css" rel="stylesheet" href="Public/Bootstrap/css/bootstrap-theme.min.css"
           media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <!-- Angular -->
     <script type="text/javascript" src="Public/Angular/Admin/adminMemberController.js"></script>
-
-    <!-- costom -->
 </head>
 <body>
 

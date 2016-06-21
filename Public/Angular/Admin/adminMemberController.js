@@ -1,15 +1,18 @@
-admins.controller('loginController', function ($scope, $http, $location ) {
+admins.controller('loginController', function ($scope, $http, $location) {
     $scope.masukAdmin = function () {
-        $http.post('http://localhost/api-vbi/vbi-api/admin/login', {
+        if (selfUrl == '::1') {
+            selfUrl = 'localhost';
+        }
+        $http.post('http://' + selfUrl + '/api-vbi/vbi-api/admin/login', {
             'emailVbi': $scope.email,
             'passVbi': $scope.pass
         }).
         success(function (data) {
             var d = $scope.datanya = data;
 
-            if(d[0].err === 'false') {
+            if (d[0].err === 'false') {
                 console.log('login berhasil');
-                sessionStorage.setItem('sesi', '{"session":"true","memberToken":"'+d[1].enc_token+'"}');
+                document.cookie = 'token=true=' + d[1].enc_token;
                 $location.path('/adminhome');
             } else {
                 console.log('login gagal');
@@ -23,4 +26,32 @@ admins.controller('loginController', function ($scope, $http, $location ) {
             $scope.apply();
         })
     }
+});
+
+admins.controller('checkCookie', function ($scope, $http, $location) {
+    if (selfUrl == '::1') {
+        selfUrl = 'localhost';
+    }
+    $http.post('http://' + selfUrl + '/api-vbi/vbi-api/admin/login', {
+        'emailVbi': $scope.email,
+        'passVbi': $scope.pass
+    }).
+    success(function (data) {
+        var d = $scope.datanya = data;
+
+        if (d[0].err === 'false') {
+            console.log('login berhasil');
+            document.cookie = 'token=true=' + d[1].enc_token;
+            $location.path('/adminhome');
+        } else {
+            console.log('login gagal');
+            $scope.pesan = 'Email atau Password Salah!';
+            $scope.pass = '';
+        }
+    }).
+    error(function (data, status, header, config) {
+        console.log('D :' + data, 'S :' + status, 'H :' + header, 'C :' + config);
+        $location.path('/admin');
+        $scope.apply();
+    })
 });
