@@ -23,7 +23,7 @@ admins.config(['$routeProvider',
             },
             templateUrl: 'Public/Page/Admin/adminLogin.html',
             controller: 'loginController',
-            title: 'Selamat Datang Bro'
+            title: 'VBI Auth'
         }).
 
         when('/adminkeluar', {
@@ -65,7 +65,46 @@ admins.config(['$routeProvider',
                 }
             },
             templateUrl: 'Public/Page/Admin/adminHome.html',
-            title: 'Selamat Datang Om'
+            title: 'Selamat Datang'
+        }).
+
+        when('/adminregion', {
+            resolve: {
+                "check": function ($location) {
+
+                    var kue = document.cookie;
+                    var kueIndex = kue.split(';')[0];
+                    var kueExplode = kueIndex.split('=');
+                    var kueFinal = [{"session": kueExplode[0], "status": kueExplode[1], "token": kueExplode[2]}];
+                    var kueStatus = kueFinal[0]['status'];
+
+                    if(kueStatus == 'false') {
+                        $location.path('/admin');
+                    }
+                }
+            },
+            templateUrl: 'Public/Page/Admin/adminRegion.html',
+            controller: 'regionController',
+            title: 'Region'
+        }).
+
+        when('/adminteam', {
+            resolve: {
+                "check": function ($location) {
+
+                    var kue = document.cookie;
+                    var kueIndex = kue.split(';')[0];
+                    var kueExplode = kueIndex.split('=');
+                    var kueFinal = [{"session": kueExplode[0], "status": kueExplode[1], "token": kueExplode[2]}];
+                    var kueStatus = kueFinal[0]['status'];
+
+                    if(kueStatus == 'false') {
+                        $location.path('/admin');
+                    }
+                }
+            },
+            templateUrl: 'Public/Page/Admin/adminTeam.html',
+            title: 'Team'
         }).
 
         when('/404', {

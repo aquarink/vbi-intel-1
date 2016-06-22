@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d09ed39f-85aa-42b1-bd43-74b3192f8977" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Angular/angular-cookies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Page/berita.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Page/galeri.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Page/teamrider.html" />
+    <list default="true" id="d09ed39f-85aa-42b1-bd43-74b3192f8977" name="Default" comment="22 Juni 2016">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Angular/Admin/adminRegionController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Angular/Admin/adminTeamController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Page/Admin/adminRegion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Page/Admin/adminTeam.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Angular/Admin/admin-app.js" afterPath="$PROJECT_DIR$/Public/Angular/Admin/admin-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js" afterPath="$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Angular/angular-app.js" afterPath="$PROJECT_DIR$/Public/Angular/angular-app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Angular/angular.js" afterPath="$PROJECT_DIR$/Public/Angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Bootstrap/Costom/standing.css" afterPath="$PROJECT_DIR$/Public/Bootstrap/Costom/standing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/Public/Bootstrap/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Bootstrap/css/bootstrap.min1.css" afterPath="$PROJECT_DIR$/Public/Bootstrap/css/bootstrap.min1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/chat.html" afterPath="$PROJECT_DIR$/Public/Page/chat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/landing.html" afterPath="$PROJECT_DIR$/Public/Page/landing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/login.html" afterPath="$PROJECT_DIR$/Public/Page/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/race.html" afterPath="$PROJECT_DIR$/Public/Page/race.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/region.html" afterPath="$PROJECT_DIR$/Public/Page/region.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/register.html" afterPath="$PROJECT_DIR$/Public/Page/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Page/teamrider.html" afterPath="$PROJECT_DIR$/Public/Page/teamrider.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back.php" afterPath="$PROJECT_DIR$/back.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front.php" afterPath="$PROJECT_DIR$/front.php" />
     </list>
     <ignored path="vbi-intel-1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,18 +36,100 @@
       <file leaf-file-name="back.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin-app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="teamrider.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Page/teamrider.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminHome.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminHome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin-app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/admin-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8201058">
-              <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminMemberController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="10" selection-start-line="9" selection-start-column="8" selection-end-line="26" selection-end-column="10" />
+              <folding>
+                <element signature="e#1113#1940#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminTeam.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminTeam.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.7687861">
+              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminTeamController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminTeamController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminRegion.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminRegion.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="66" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminRegionController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminRegionController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminLogin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminLogin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -75,6 +146,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Pebrie" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -108,17 +184,21 @@
         <option value="$PROJECT_DIR$/Public/Page/galeri.html" />
         <option value="$PROJECT_DIR$/Public/Bootstrap/css/bootstrap-theme.css" />
         <option value="$PROJECT_DIR$/Public/Bootstrap/css/bootstrap.min1.css" />
-        <option value="$PROJECT_DIR$/Public/Page/teamrider.html" />
         <option value="$PROJECT_DIR$/Public/require.js" />
         <option value="$PROJECT_DIR$/Public/require-config.js" />
         <option value="$PROJECT_DIR$/Public/Angular/angular-cookies.js" />
-        <option value="$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js" />
         <option value="$PROJECT_DIR$/Public/Angular/angular-app.js" />
         <option value="$PROJECT_DIR$/front.php" />
         <option value="$PROJECT_DIR$/Public/Page/landing.html" />
-        <option value="$PROJECT_DIR$/Public/Angular/Admin/admin-app.js" />
         <option value="$PROJECT_DIR$/Public/Angular/angular.js" />
+        <option value="$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js" />
+        <option value="$PROJECT_DIR$/Public/Page/Admin/adminRegion.html" />
+        <option value="$PROJECT_DIR$/Public/Angular/Admin/adminRegionController.js" />
+        <option value="$PROJECT_DIR$/Public/Page/teamrider.html" />
+        <option value="$PROJECT_DIR$/Public/Angular/Admin/admin-app.js" />
         <option value="$PROJECT_DIR$/back.php" />
+        <option value="$PROJECT_DIR$/Public/Angular/Admin/adminTeamController.js" />
+        <option value="$PROJECT_DIR$/Public/Page/Admin/adminTeam.html" />
       </list>
     </option>
   </component>
@@ -163,6 +243,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,7 +359,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,14 +368,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api-vbi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Xampp\htdocs\vbi-intel-1\Public\Angular\admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Xampp\htdocs\vbi-intel-1\Public\Page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xampp\htdocs\vbi-intel-1\Public\Page\Admin" />
+      <recent name="D:\Xampp\htdocs\vbi-intel-1\Public\Angular\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -989,26 +1070,30 @@
       <workItem from="1466035162349" duration="2609000" />
       <workItem from="1466392194160" duration="11271000" />
       <workItem from="1466417130147" duration="1223000" />
-      <workItem from="1466473875623" duration="3084000" />
+      <workItem from="1466473875623" duration="5733000" />
+      <workItem from="1466500083302" duration="11674000" />
+      <workItem from="1466558507959" duration="15011000" />
+      <workItem from="1466587811100" duration="231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75356000" />
+    <option name="totallyTimeSpent" value="104921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32636657" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1035,6 +1120,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="22 Juni 2016" />
+    <option name="LAST_COMMIT_MESSAGE" value="22 Juni 2016" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -1044,34 +1133,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Public/Angular/angular-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Page/teamrider.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="117" selection-start-line="9" selection-start-column="117" selection-end-line="9" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Page/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/Angular/angular-app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1226,13 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminHome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/Page/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1324,25 +1378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Page/teamrider.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/Angular/angular-cookies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52112675">
           <caret line="308" column="9" selection-start-line="308" selection-start-column="9" selection-end-line="308" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="53" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,40 +1406,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30867" column="361" selection-start-line="30867" selection-start-column="361" selection-end-line="30867" selection-end-column="361" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Public/Page/landing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2195572">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminLogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15682657">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8740741">
-          <caret line="30868" column="0" selection-start-line="30868" selection-start-column="0" selection-end-line="30868" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back.php">
+    <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminRegionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Page/teamrider.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminHome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminRegion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="66" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/admin-app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8201058">
-          <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminMemberController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="10" selection-start-line="9" selection-start-column="8" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#1113#1940#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Angular/Admin/adminTeamController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Page/Admin/adminTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7687861">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
           <folding />
         </state>
       </provider>

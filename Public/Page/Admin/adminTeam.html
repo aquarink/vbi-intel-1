@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="Public/Bootstrap/Costom/standing.css" media="screen" title="no title" charset="utf-8">
+
+<div class="row" ng-controller="teamController">
+    <div class="col-md-8" ng-init="allRegion()">
+        <div class="panel panel-info">
+            <form name="teamFrm">
+                <div class="panel-heading"><i class="glyphicon glyphicon-pencil"></i> Register Team Baru</div>
+                <div class="panel-body">
+                    <label for="Nama">Nama Team</label>
+                    <input ng-model="team.nama" type="text" class="form-control" id="Nama" placeholder="Nama Team" autofocus required>
+                    <br>
+                    <label for="Logo">Logo Team</label>
+                    <input multiple file-nya="files" type="file" class="form-control" id="Logo" required accept="image/*">
+                    <br>
+                    <label for="Manager">Manager</label>
+                    <input ng-model="team.manager" class="form-control" id="Manager" placeholder="Nama Manager" required>
+                    <br>
+                    <label for="Kontak">Kontak Telephone</label>
+                    <input ng-model="team.pengurus" class="form-control" id="Kontak" placeholder="Nomor Telepone" required>
+                    <br>
+                    <label for="Alamat">Alamat Sekretariat Team</label>
+                    <input ng-model="team.alamat" class="form-control" id="Alamat" placeholder="Alamat Sekretariat" required>
+                    <br>
+                    <label for="Sekretariat">Koordinat Peta Sekretariat</label>
+                    <input ng-model="team.koordinat" type="text" class="form-control" id="Sekretariat"
+                           placeholder="contoh -0.900288&119.878058 gunakan '&' untuk memisahkan" required>
+                    <br>
+                    <table>
+                        <tr ng-repeat="image in imagesrc track by $index">
+                            <td>{{ image.Name }}</td>
+                            <td><img class="img img-responsive" src="{{ image.Src }}" title="{{ image.Title }}"></td>
+                            <td>{{ image.Size }}</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <i style="color:red"> {{ pesan }}</i>
+                    <button ng-disabled="teamFrm.$invalid" ng-click="regisTeam()" class="btn btn-lg btn-primary btn-block" type="submit">Register Team</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading"><a href="#" style="color:#333"><i class="glyphicon glyphicon-star"></i> Berita
+                Lainnya</a></div>
+            <div class="panel-body">
+                <div class="caption" ng-repeat="regionData in allReg">
+                    <a href="#/adminregion/{{ regionData.id_region }}" >{{ regionData.wilayah }}</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading"><i class="glyphicon glyphicon-king"></i> Podium Kelas xxx</div>
+            <div class="panel-body">
+
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+
+            </div>
+        </div>
+        <a href="#">Kelas xxx Lengkap!</a>
+    </div>
+</div>

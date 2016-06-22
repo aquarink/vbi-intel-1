@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="Public/Bootstrap/Costom/standing.css" media="screen" title="no title" charset="utf-8">
+
+<div class="row" ng-controller="regionController">
+    <div class="col-md-8" ng-init="allRegion()">
+        <div class="panel panel-info">
+            <form name="regionFrm">
+                <div class="panel-heading"><i class="glyphicon glyphicon-pencil"></i> Register Region Baru</div>
+                <div class="panel-body">
+                    <label for="Wilayah">Wilayah Region</label>
+                    <input ng-model="region.wilayah" type="text" class="form-control" id="Wilayah"
+                           placeholder="Nama Wilayah Region" autofocus required >
+                    <br>
+                    <label for="Pengurus">Pengurus</label>
+                    <textarea ng-model="region.pengurus" class="form-control" id="Pengurus" placeholder="Nama Pengurus = No.Telpon contoh Abdul = 08151099388" required ></textarea>
+                    <br>
+                    <label for="Koordinat">Koordinat Peta Region</label>
+                    <input ng-model="region.koordinat" type="text" class="form-control" id="Koordinat"
+                               placeholder="contoh -0.900288&119.878058 gunakan '&' untuk memisahkan" required >
+                    <br>
+                    <i style="color:red"> {{ pesan }}</i>
+                    <button ng-disabled="regionFrm.$invalid" ng-click="regisRegion(region)"
+                            class="btn btn-lg btn-primary btn-block" type="submit">Register Region
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading"><a href="#" style="color:#333"><i class="glyphicon glyphicon-star"></i> Berita
+                Lainnya</a></div>
+            <div class="panel-body">
+                <div class="caption" ng-repeat="regionData in allReg">
+                    <a href="#/adminregion/{{ regionData.id_region }}" >{{ regionData.wilayah }}</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading"><i class="glyphicon glyphicon-king"></i> Podium Kelas xxx</div>
+            <div class="panel-body">
+
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+                <div class="alert alert-default" role="alert" style="padding: 0px;">
+                    <img src="Public/Image/facebook.png" style="width: 30px" alt=""/>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                </div>
+
+            </div>
+        </div>
+        <a href="#">Kelas xxx Lengkap!</a>
+    </div>
+</div>

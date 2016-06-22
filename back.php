@@ -13,6 +13,13 @@
 
     <!-- Angular -->
     <script type="text/javascript" src="Public/Angular/Admin/adminMemberController.js"></script>
+    <script type="text/javascript" src="Public/Angular/Admin/adminRegionController.js"></script>
+    <script type="text/javascript" src="Public/Angular/Admin/adminTeamController.js"></script>
+
+    <!-- costom -->
+    <script>
+        var selfUrl = '<?php echo $_SERVER['SERVER_ADDR']; ?>';
+    </script>
 </head>
 <body>
 
@@ -38,12 +45,22 @@
                 <li ng-class="{ active: isActive('/adminregion')}"><a href="#/adminregion">Region</a></li>
                 <li ng-class="{ active: isActive('/adminpoint')}"><a href="#/adminpoint">Podium</a></li>
 
+                <li ng-class="{ active: isActive('/adminteam')}" ng-class="{ active: isActive('/adminrider')}"
+                    class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Team & Rider<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#/adminteam">Tambah Team</a></li>
+                        <li><a href="#/adminrider">Tambah Rider</a></li>
+                    </ul>
+                </li>
+
                 <li ng-class="{ active: isActive('/adminregulasi')}" ng-class="{ active: isActive('/adminregulasi')}"
                     class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Regulasi<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Regulasi Balap</a></li>
+                        <li><a href="">Regulasi Balap</a></li>
                         <li><a href="#">Regulasi Teknis</a></li>
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">AD ART</li>
